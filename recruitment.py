@@ -4,7 +4,7 @@ def main():
 
 
         
-        skills=["py","db","qury","cc","js","ruby"]
+        skills=["Python","C++","Javascript","Juggling","Running","Eating"]
         cv={}
         name=input("What is your name? ")
         cv["name"]=name
