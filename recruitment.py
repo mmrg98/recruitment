@@ -1,16 +1,19 @@
 def main():
-        print("")
+        
 
 
 
         
         skills=["p","d","q","w","E","r"]
+        cv={}
         name=input("What is your name? ")
-        age=eval(input("How old are you? "))
-        exp=eval(input("How many years of experience do you have? "))
-        cv={"name":"m"}
         cv["name"]=name
+        age=eval(input("How old are you? "))
         cv["age"]=age
+        exp=eval(input("How many years of experience do you have? "))
+        
+        
+        
         cv["experience"]=exp
         cv["skills"]=[]
         
@@ -22,9 +25,9 @@ def main():
         cv["skills"].append(skills[s1-1])
         cv["skills"].append(skills[s2-1])
         if(cv["age"] >= 25 and cv["age"]<=40 and cv["experience"]>5 and (skills[5] in cv["skills"])):
-           print("accepted")
+           print("you are accepted")
         else:
-           print("rejected")
+           print("sorry, you are rejected")
                 
                 
         
