@@ -21,7 +21,7 @@ def main():
         cv["skills"].append(skills[s1-1])
         s2=int(input("Choose another skill from above by entering its number: "))
         cv["skills"].append(skills[s2-1])
-        if(cv["age"] >= 25 and cv["age"]<=40 and cv["experience"]>5 and (skills[5] in cv["skills"])):
+        if(cv["age"] > 25 and cv["age"]<40 and cv["experience"]>5 and (skills[5] in cv["skills"])):
            print("You have been accepted, %s."%(cv["name"].title()))
         else:
            print("sorry, you are rejected")
